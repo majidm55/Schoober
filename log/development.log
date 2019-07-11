@@ -391,3 +391,103 @@ Processing by ParenttripsController#show as HTML
 Completed 200 OK in 2441ms (Views: 136.0ms | ActiveRecord: 1.3ms)
 
 
+Started GET "/parenttrips/3" for ::1 at 2019-07-11 00:24:29 -0400
+Processing by ParenttripsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mParentTrip Load (1.2ms)[0m  [1m[34mSELECT  "parent_trips".* FROM "parent_trips" WHERE "parent_trips"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/parenttrips_controller.rb:62
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/parenttrips_controller.rb:63
+  [1m[36mDriverTrip Load (1.6ms)[0m  [1m[34mSELECT "driver_trips".* FROM "driver_trips" WHERE "driver_trips"."end_point" = $1 AND "driver_trips"."time_slot" = $2 AND "driver_trips"."trip_date" = $3[0m  [["end_point", "21451 Avenue Rd, North York, ON"], ["time_slot", "07:00 AM - 08:00 AM"], ["trip_date", "2019-07-10"]]
+  ↳ app/controllers/parenttrips_controller.rb:76
+  Rendering parenttrips/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/parenttrips/_drivertrip.html.erb:3
+  Rendered parenttrips/_drivertrip.html.erb (5.5ms)
+  Rendered parenttrips/_googlemaps.html.erb (2.5ms)
+  Rendered parenttrips/show.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 3909ms (Views: 134.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/parenttrips/3" for ::1 at 2019-07-11 00:28:45 -0400
+Processing by ParenttripsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mParentTrip Load (0.5ms)[0m  [1m[34mSELECT  "parent_trips".* FROM "parent_trips" WHERE "parent_trips"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/parenttrips_controller.rb:62
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/parenttrips_controller.rb:63
+  [1m[36mDriverTrip Load (0.6ms)[0m  [1m[34mSELECT "driver_trips".* FROM "driver_trips" WHERE "driver_trips"."end_point" = $1 AND "driver_trips"."time_slot" = $2 AND "driver_trips"."trip_date" = $3[0m  [["end_point", "21451 Avenue Rd, North York, ON"], ["time_slot", "07:00 AM - 08:00 AM"], ["trip_date", "2019-07-10"]]
+  ↳ app/controllers/parenttrips_controller.rb:76
+  Rendering parenttrips/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/parenttrips/_drivertrip.html.erb:3
+  Rendered parenttrips/_drivertrip.html.erb (2.0ms)
+  Rendered parenttrips/_googlemaps.html.erb (1.9ms)
+  Rendered parenttrips/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 3160ms (Views: 108.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/parenttrips/3" for ::1 at 2019-07-11 00:37:38 -0400
+Processing by ParenttripsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mParentTrip Load (0.6ms)[0m  [1m[34mSELECT  "parent_trips".* FROM "parent_trips" WHERE "parent_trips"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/parenttrips_controller.rb:62
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/parenttrips_controller.rb:63
+  [1m[36mDriverTrip Load (0.8ms)[0m  [1m[34mSELECT "driver_trips".* FROM "driver_trips" WHERE "driver_trips"."end_point" = $1 AND "driver_trips"."time_slot" = $2 AND "driver_trips"."trip_date" = $3[0m  [["end_point", "21451 Avenue Rd, North York, ON"], ["time_slot", "07:00 AM - 08:00 AM"], ["trip_date", "2019-07-10"]]
+  ↳ app/controllers/parenttrips_controller.rb:76
+  Rendering parenttrips/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/parenttrips/_drivertrip.html.erb:3
+  Rendered parenttrips/_drivertrip.html.erb (3.8ms)
+  Rendered parenttrips/_googlemaps.html.erb (3.9ms)
+  Rendered parenttrips/show.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 8513ms (Views: 3573.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/parenttrips/3" for ::1 at 2019-07-11 00:38:20 -0400
+Processing by ParenttripsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mParentTrip Load (0.5ms)[0m  [1m[34mSELECT  "parent_trips".* FROM "parent_trips" WHERE "parent_trips"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/parenttrips_controller.rb:62
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/parenttrips_controller.rb:63
+  [1m[36mDriverTrip Load (0.5ms)[0m  [1m[34mSELECT "driver_trips".* FROM "driver_trips" WHERE "driver_trips"."end_point" = $1 AND "driver_trips"."time_slot" = $2 AND "driver_trips"."trip_date" = $3[0m  [["end_point", "21451 Avenue Rd, North York, ON"], ["time_slot", "07:00 AM - 08:00 AM"], ["trip_date", "2019-07-10"]]
+  ↳ app/controllers/parenttrips_controller.rb:76
+  Rendering parenttrips/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/parenttrips/_drivertrip.html.erb:3
+  Rendered parenttrips/_drivertrip.html.erb (3.2ms)
+  Rendered parenttrips/_googlemaps.html.erb (3.8ms)
+  Rendered parenttrips/show.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 5351ms (Views: 2844.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/parenttrips/3" for ::1 at 2019-07-11 00:39:05 -0400
+Processing by ParenttripsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mParentTrip Load (0.4ms)[0m  [1m[34mSELECT  "parent_trips".* FROM "parent_trips" WHERE "parent_trips"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/parenttrips_controller.rb:62
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/parenttrips_controller.rb:63
+  [1m[36mDriverTrip Load (1.0ms)[0m  [1m[34mSELECT "driver_trips".* FROM "driver_trips" WHERE "driver_trips"."end_point" = $1 AND "driver_trips"."time_slot" = $2 AND "driver_trips"."trip_date" = $3[0m  [["end_point", "21451 Avenue Rd, North York, ON"], ["time_slot", "07:00 AM - 08:00 AM"], ["trip_date", "2019-07-10"]]
+  ↳ app/controllers/parenttrips_controller.rb:76
+  Rendering parenttrips/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/parenttrips/_drivertrip.html.erb:3
+  Rendered parenttrips/_drivertrip.html.erb (2.6ms)
+  Rendered parenttrips/_googlemaps.html.erb (1.8ms)
+  Rendered parenttrips/show.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 5056ms (Views: 3147.1ms | ActiveRecord: 1.9ms)
+
+
