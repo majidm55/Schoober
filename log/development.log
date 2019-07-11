@@ -359,3 +359,35 @@ Processing by DriversController#show as HTML
 Completed 200 OK in 232ms (Views: 169.4ms | ActiveRecord: 13.1ms)
 
 
+Started GET "/drivers" for ::1 at 2019-07-11 00:15:25 -0400
+Processing by DriversController#index as HTML
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/drivers/_driver.html.erb:1
+  Rendered drivers/_driver.html.erb (7.8ms)
+  Rendered drivers/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 161ms (Views: 158.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/parenttrips/3" for ::1 at 2019-07-11 00:15:29 -0400
+Processing by ParenttripsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mParentTrip Load (0.3ms)[0m  [1m[34mSELECT  "parent_trips".* FROM "parent_trips" WHERE "parent_trips"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/parenttrips_controller.rb:62
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/parenttrips_controller.rb:63
+  [1m[36mDriverTrip Load (0.8ms)[0m  [1m[34mSELECT "driver_trips".* FROM "driver_trips" WHERE "driver_trips"."end_point" = $1 AND "driver_trips"."time_slot" = $2 AND "driver_trips"."trip_date" = $3[0m  [["end_point", "21451 Avenue Rd, North York, ON"], ["time_slot", "07:00 AM - 08:00 AM"], ["trip_date", "2019-07-10"]]
+  ↳ app/controllers/parenttrips_controller.rb:76
+  Rendering parenttrips/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/parenttrips/_drivertrip.html.erb:3
+  Rendered parenttrips/_drivertrip.html.erb (3.3ms)
+  Rendered parenttrips/_googlemaps.html.erb (2.1ms)
+  Rendered parenttrips/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 2441ms (Views: 136.0ms | ActiveRecord: 1.3ms)
+
+
