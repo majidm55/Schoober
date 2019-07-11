@@ -1,0 +1,11 @@
+Started GET "/guidelines/index" for ::1 at 2019-07-10 22:54:00 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/majid/.rvm/gems/ruby-2.3.5/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by GuidelinesController#index as HTML
+  Rendering guidelines/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered guidelines/index.html.erb within layouts/application (19320.7ms)
+Completed 200 OK in 19702ms (Views: 19688.3ms | ActiveRecord: 6.4ms)
+
+
