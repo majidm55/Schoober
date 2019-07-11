@@ -1,9 +1,12 @@
 <% @selectedDriverTrips.each do |drivertrip| %>
     <tr >
         <% drivername = User.find_by(id: drivertrip.user_id)%>
-        <td>    
-            <img src="<%= drivername.user_pic %>" />
+        <td> 
+            <%= link_to driver_path drivertrip do %>   
+                <img src="<%= drivername.user_pic %>" />
+            <% end %>
         </td>
+
         <td>    
             <%= drivername.first_name %>
         </td>
@@ -31,5 +34,4 @@
         </td>
     </tr>
 <% end %>
-
 
