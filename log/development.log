@@ -9,3 +9,12 @@ Processing by GuidelinesController#index as HTML
 Completed 200 OK in 19702ms (Views: 19688.3ms | ActiveRecord: 6.4ms)
 
 
+Started GET "/guidelines/index" for ::1 at 2019-07-10 22:57:55 -0400
+Processing by GuidelinesController#index as HTML
+  Rendering guidelines/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered guidelines/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 3049ms (Views: 3047.0ms | ActiveRecord: 0.4ms)
+
+
