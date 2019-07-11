@@ -1,0 +1,25 @@
+<%= react_component('Navbar', {current_user: current_user}) %>
+
+<h1>All possible drivers</h1>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Start Point</th>
+                <th>End Point</th>
+                <th>Trip Date</th>
+                <th>Time Slot</th>
+                <th>Spots Available</tr>
+            </tr>
+        </thead>
+        <tbody>
+            <%= render 'drivertrip' %>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
