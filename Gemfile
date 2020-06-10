@@ -12,7 +12,7 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'sassc-rails', '>= 2.1.0'
 
 gem 'gmaps4rails'
-gem 'geocoder', '~> 1.5', '>= 1.5.1'
+gem 'geocoder', '~> 1.6'
 
 gem 'twilio-ruby', '~> 3.12'
 gem 'react-rails'
